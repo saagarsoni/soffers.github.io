@@ -34,6 +34,20 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+
 </head>
 
 <body>
@@ -110,8 +124,8 @@
           <div class="carousel-item active" style="background-image: url('https://drive.google.com/uc?export=view&id=134YDiipq6VwrJptyuIveGJpq0ukpkwws');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Dhar</span></h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>InduPrabha Home Stay</span></h2>
+                <p class="animate__animated animate__fadeInUp">.......</p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
@@ -119,10 +133,10 @@
 
           <!-- Slide 2 -->
           <div class="carousel-item" style="background-image: url('https://drive.google.com/uc?export=view&id=12U7o24SHAZC7Py_jx3MLNMeQOKf0EW-K');">
-            <div class="carousel-container">
+           <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>InduPrabha Home Stay</span></h2>
+                <p class="animate__animated animate__fadeInUp">.......</p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
@@ -342,11 +356,36 @@
               <li data-filter="*" class="filter-active">Bagh Ki Gufa</li>
               <li data-filter=".filter-app">Mandav</li>
               <li data-filter=".filter-card">Mohan Kheda</li>
-              <li data-filter=".filter-web">Amdheera</li>
+             <!--  <li data-filter=".filter-web">Amdheera</li>
               <li data-filter=".filter-web">Pithampur</li>
               <li data-filter=".filter-web">Mahow patalpani</li>
               <li data-filter=".filter-web">Nandalwadi</li>
-              <li data-filter=".filter-web"></li>
+              <li data-filter=".filter-web"></li> -->
+                        <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">More Places
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">Amdheera</a></li>
+      <li><a tabindex="-1" href="#">Pithampur</a></li>
+       <li><a tabindex="-1" href="#">Mahow patalpani</a></li>
+       <li><a tabindex="-1" href="#">Nandalwadi</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+ 
                           </ul>
           </div>
         </div>
@@ -784,6 +823,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+
 
 </body>
 

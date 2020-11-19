@@ -864,7 +864,9 @@ section {
 
 .myfont {
   padding-bottom: 30px;
-  font-size:15px; 
+  font-size:15px;
+  display: flex; 
+  justify-content: center;
 }
 
 .services {

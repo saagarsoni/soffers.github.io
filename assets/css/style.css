@@ -520,6 +520,8 @@ section {
   padding: 60px 0;
 }
 
+
+
 .section-bg {
   background-color: #f5f9fc;
 }
@@ -859,6 +861,14 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.myfont {
+  padding-bottom: 30px;
+  font-size:15px;
+  display: flex; 
+  justify-content: center;
+}
+
 .services {
   padding-bottom: 30px;
 }
